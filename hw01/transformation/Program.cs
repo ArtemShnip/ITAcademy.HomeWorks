@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace transformation
 {
@@ -18,6 +19,20 @@ namespace transformation
                 8 Значение переменной добовляем в массив
                 9 Создание файла, с помощью массива байтов и сохранение по указаному пути
             */
+
+            StreamReader textReader = new StreamReader(@"C:\project\files\image.txt", true);
+            string textReaderResult = textReader.ReadToEnd();
+            string[] arrayOfTextResult = textReaderResult.Split(' ');
+            byte[] imageBytes = new byte[arrayOfTextResult.Length - 1];
+            textReader.Dispose();
+
+            for (int i = 0; i < arrayOfTextResult.Length - 1; i++)
+            {
+                byte binary = Convert.ToByte(arrayOfTextResult[i], 2);
+                imageBytes[i] = binary;
+            }
+            File.WriteAllBytes(@"C:\project\files\image.png", imageBytes);
+
         }
     }
 }
