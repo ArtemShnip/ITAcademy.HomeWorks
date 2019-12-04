@@ -5,8 +5,8 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hw_01_assets", "hw_01_assets", "{579EE2A7-31B2-4786-9B9E-E5A9877FEC1F}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Users\tjoma\Desktop\блок-схема.drawio = ..\..\..\Users\tjoma\Desktop\блок-схема.drawio
-		..\..\..\Users\tjoma\Desktop\текстовый алгоритм.docx = ..\..\..\Users\tjoma\Desktop\текстовый алгоритм.docx
+		алгоритм.txt = алгоритм.txt
+		блок-схема.drawio = блок-схема.drawio
 	EndProjectSection
 EndProject
 Global
