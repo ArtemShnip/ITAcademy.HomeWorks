@@ -8,10 +8,12 @@ namespace HW04._1_Unicode
         {
             char bletter;
             char sletter;
-            for (int i = 90,j=122 ; i > 64; i--, j--)       
+            int unibl = 90;
+            int unisl = 122;
+            for (int i = 0; i < 26; i++)       
             {
-                bletter = Convert.ToChar(i);
-                sletter = Convert.ToChar(j);
+                bletter = Convert.ToChar(unibl--);
+                sletter = Convert.ToChar(unisl--);
                 Console.WriteLine(bletter + " " + sletter);     
             }
         }
