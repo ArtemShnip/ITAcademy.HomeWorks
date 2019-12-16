@@ -6,8 +6,8 @@ namespace HW04._1_Unicode
     {
         static void Main(string[] args)
         {
-            char Bletter;
-            char Sletter;
+            char bletter;
+            char sletter;
             for (int i = 90,j=122 ; i > 64; i--, j--)       
             {
                 Bletter = Convert.ToChar(i);
