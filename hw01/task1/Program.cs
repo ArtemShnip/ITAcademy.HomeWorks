@@ -10,9 +10,9 @@ namespace HW04._1_Unicode
             char sletter;
             for (int i = 90,j=122 ; i > 64; i--, j--)       
             {
-                Bletter = Convert.ToChar(i);
-                Sletter = Convert.ToChar(j);
-                Console.WriteLine(Bletter + " " + Sletter);     
+                bletter = Convert.ToChar(i);
+                sletter = Convert.ToChar(j);
+                Console.WriteLine(bletter + " " + sletter);     
             }
         }
     }
