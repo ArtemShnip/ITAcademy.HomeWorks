@@ -29,7 +29,7 @@ namespace Task2
             {
                 arrayUser[i] = arrayUser[i - 1];
             }
-            arrayUser[position] = element;
+            5arrayUser[position] = element;
 
             for (int i = 0; i < arrayUser.Length; i++)
             {
