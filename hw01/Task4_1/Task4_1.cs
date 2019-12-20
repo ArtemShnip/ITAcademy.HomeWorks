@@ -9,13 +9,13 @@ namespace Task4_1
         {
             Console.WriteLine("Press to start");
             Console.ReadLine();
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
             Int64[] array = new Int64[100000000];
             for (Int64 i = 0; i < array.Length; i++)
             {
                 array[i] = new Random().Next();
             }
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             for (Int64 first = 0, last = array.Length - 1; first < last; first++, last--)
             {
                 Int64 elementFirst = array[first];
@@ -26,7 +26,6 @@ namespace Task4_1
             stopwatch.Stop();
             TimeSpan timeSpan = stopwatch.Elapsed;
             Console.WriteLine(timeSpan);
-
         }
     }
 }
