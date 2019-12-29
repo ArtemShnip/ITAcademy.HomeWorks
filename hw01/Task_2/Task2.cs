@@ -29,7 +29,7 @@ namespace Task_2
             Item1(maxIndex, words);
             Item2(maxIndex, minIndex, words);
             Item3(words);
-            Item4();
+            Item4(words);
             Console.ReadLine();
         }
         static void Item1(int maxIndex,string[] words)
@@ -73,9 +73,27 @@ namespace Task_2
             }
             Console.WriteLine("leters: " + countLeters + " \nsigns: " + countSigns);
         }
-        static void Item4()
+        static void Item4(string[] words)
         {
-
+            Console.WriteLine("\ntask4:");
+            string[] wordsItem3 = (string[])words.Clone();
+            string temporary;
+            for (int i = 0; i < wordsItem3.Length - 1; i++)
+            {
+                for (int j = i + 1; j < wordsItem3.Length; j++)
+                {
+                    if (wordsItem3[i].Length < wordsItem3[j].Length)
+                    {
+                        temporary = wordsItem3[i];
+                        wordsItem3[i] = wordsItem3[j];
+                        wordsItem3[j] = temporary;
+                    }
+                }
+            }
+            for (int i = 0; i < wordsItem3.Length; i++)
+            {
+                Console.WriteLine(wordsItem3[i]);
+            }
         }
     }
 }
