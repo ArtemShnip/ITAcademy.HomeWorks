@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Hw09
 {
-    class Registrations : Program
+    class Registrations
     {
         public void Registr(Passenger passenger)
         {
@@ -22,7 +22,7 @@ namespace Hw09
                 string pasport = Console.ReadLine();
                 if (Regex.IsMatch(pasport, @"[a-zA-Z]{2}\d{6}"))
                 {
-                    passenger.Pasport = pasport;
+                    passenger.Passport = pasport;
                     Random rnd = new Random();
                     passenger.Ticket = rnd.Next(1, 1000);
                     passenger.Gate = rnd.Next(1, 20);
@@ -31,7 +31,7 @@ namespace Hw09
                     {
                         case 1:
                             Console.WriteLine("Поставьте багаж на весы");
-                            luggage.Luggag(passenger);
+                            luggage.WeightLuggage(passenger);
                             Console.WriteLine($"проходите к выходу {passenger.Gate}");
                             break;
                         case 2:
@@ -51,14 +51,14 @@ namespace Hw09
                 Console.WriteLine("Введите номер билета: ");
                 passenger.Ticket = int.Parse(Console.ReadLine());
                 Random rnd = new Random();
-                passenger.Pasport = $"{(char)rnd.Next('A', 'Z' + 1)}{(char)rnd.Next('A', 'Z' + 1)}{rnd.Next(100000,999999)} ";
+                passenger.Passport = $"{(char)rnd.Next('A', 'Z' + 1)}{(char)rnd.Next('A', 'Z' + 1)}{rnd.Next(100000,999999)} ";
                 passenger.Gate = rnd.Next(1, 20);
                 Console.WriteLine("Вы путешествуете с багажом? \n1. да \n2. нет");
                 switch (int.Parse(Console.ReadLine()))
                 {
                     case 1:
                         Console.WriteLine("Поставьте багаж на весы");
-                        luggage.Luggag(passenger);
+                        luggage.WeightLuggage(passenger);
                         Console.WriteLine($"проходите к выходу {passenger.Gate}");
                         break;
                     case 2:
