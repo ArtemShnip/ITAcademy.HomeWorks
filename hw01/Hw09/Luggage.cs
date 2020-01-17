@@ -6,20 +6,22 @@ namespace Hw09
 {
     class Luggage : Registrations
     {
-        public void Luggag()
+        public void Luggag(Passenger passenger)
         {
             Random rnd = new Random();
-             int weight =rnd.Next(1, 100);
-            if (weight > 30)
+            passenger.WeightLuggage =rnd.Next(1, 100);
+            if (passenger.WeightLuggage > 30)
             {
-                Console.WriteLine($"Вес вашего багажа {weight} , вам надо заплатить 5$ за каждый килограмм");
-                int summa = (weight - 30) * 5;
-                Console.WriteLine($"С вас {summa}$");
+                Console.WriteLine($"\nВес вашего багажа {passenger.WeightLuggage} , вам надо заплатить 5$ за каждый килограмм");
+                int summa = (passenger.WeightLuggage - 30) * 5;
+                Console.WriteLine($"С вас {summa}$"); 
             }
-            else
+            if (passenger.WeightLuggage < 30)
             {
+                Console.WriteLine($"\nВес вашего багажа {passenger.WeightLuggage}");
             }
-            
+            Security security = new Security();
+            security.Securi(passenger);
         }
     }
 }

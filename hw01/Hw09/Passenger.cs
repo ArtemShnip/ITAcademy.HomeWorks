@@ -11,5 +11,10 @@ namespace Hw09
         public int WeightLuggage { get; set; }
         public int Ticket { get; set; }
         public int Gate { get; set; }
+
+        public override string ToString()
+        {
+            return $"Name {Name}, Pasport {Pasport}, WeightLuggage {WeightLuggage}, Ticket {Ticket}, Gate {Gate}";
+        }
     }
 }

@@ -8,8 +8,9 @@ namespace Hw09
         static void Main(string[] args)
         {
             Console.WriteLine("Мы рады приветсвовать вас в  Airlines!");
+            Passenger passenger = new Passenger();
             Registrations registrations = new Registrations();
-            registrations.Registr();
+            registrations.Registr(passenger);
         }
     }
 }

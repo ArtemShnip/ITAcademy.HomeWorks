@@ -5,17 +5,18 @@ using System.Text.RegularExpressions;
 
 namespace Hw09
 {
-    class Registrations
+    class Registrations : Program
     {
-        public void Registr()
+        public void Registr(Passenger passenger)
         {
-            Passenger passenger = new Passenger();
             Luggage luggage = new Luggage();
+
             Console.WriteLine("Как Вас зовут?");
             passenger.Name = Console.ReadLine();
+
             Console.WriteLine("Вы уже прошли регистрацию через интернет или желаете пройти её здесь.\n1. Зарегестрировался в интернете \n2. Пройти регестрацию на месте");
             int regStatus = int.Parse(Console.ReadLine());
-            if (regStatus == 1)
+            if (regStatus == 2)                                                 //на месте
             {
                 Console.WriteLine("Введите номер паспорта \"AB123456\" : ");
                 string pasport = Console.ReadLine();
@@ -29,8 +30,8 @@ namespace Hw09
                     switch (int.Parse(Console.ReadLine()))
                     {
                         case 1:
-                            Console.WriteLine("Поставте багаж на весы");
-                            luggage.Luggag();
+                            Console.WriteLine("Поставьте багаж на весы");
+                            luggage.Luggag(passenger);
                             Console.WriteLine($"проходите к выходу {passenger.Gate}");
                             break;
                         case 2:
@@ -45,7 +46,7 @@ namespace Hw09
                 }
                 else Console.WriteLine("Введите коректно номер паспорта");
             }
-            if (regStatus == 2)
+            if (regStatus == 1)                      //в интернете
             {
                 Console.WriteLine("Введите номер билета: ");
                 passenger.Ticket = int.Parse(Console.ReadLine());
@@ -56,8 +57,8 @@ namespace Hw09
                 switch (int.Parse(Console.ReadLine()))
                 {
                     case 1:
-                        Console.WriteLine("Поставте багаж на весы");                        
-                        luggage.Luggag();
+                        Console.WriteLine("Поставьте багаж на весы");
+                        luggage.Luggag(passenger);
                         Console.WriteLine($"проходите к выходу {passenger.Gate}");
                         break;
                     case 2:
