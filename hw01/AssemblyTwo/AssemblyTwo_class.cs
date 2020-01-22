@@ -19,8 +19,6 @@ namespace AssemblyTwo
                 employee.protected1 = 2;
                 employee.protectedInternal1 = "4";
             }
-
-
         }
     }
 }
