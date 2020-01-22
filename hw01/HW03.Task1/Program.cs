@@ -31,7 +31,6 @@ namespace HW03.Task1
             long unb1 = (long)o1;
             ushort unb2 = (ushort)o2;
             float unb3 = (float)o3;
-            //test
         }
     }
 }
