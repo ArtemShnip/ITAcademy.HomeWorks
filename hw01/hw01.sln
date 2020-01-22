@@ -5,10 +5,6 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw_08", "Hw_08\Hw_08.csproj", "{DFC47071-5251-4D6E-9FD2-018041DA6347}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyOne", "AssemblyOne\AssemblyOne.csproj", "{F024362C-1830-4CF3-86A9-691EE09AA507}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyTwo", "AssemblyTwo\AssemblyTwo.csproj", "{7D6D821A-8DAA-4F1B-A194-E0F58079DA70}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{DFC47071-5251-4D6E-9FD2-018041DA6347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFC47071-5251-4D6E-9FD2-018041DA6347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFC47071-5251-4D6E-9FD2-018041DA6347}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F024362C-1830-4CF3-86A9-691EE09AA507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F024362C-1830-4CF3-86A9-691EE09AA507}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F024362C-1830-4CF3-86A9-691EE09AA507}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F024362C-1830-4CF3-86A9-691EE09AA507}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D6D821A-8DAA-4F1B-A194-E0F58079DA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D6D821A-8DAA-4F1B-A194-E0F58079DA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D6D821A-8DAA-4F1B-A194-E0F58079DA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D6D821A-8DAA-4F1B-A194-E0F58079DA70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
