@@ -25,5 +25,7 @@ namespace AssemblyOne
             test.protectedInternal1 = "4";
             test.privateProtected1 = 5;
         }
+        
+
     }
 }
