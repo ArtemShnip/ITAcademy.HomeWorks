@@ -10,17 +10,12 @@ namespace Hw_12
 {
     class Logger
     {
-        private static ILog log = LogManager.GetLogger(typeof(Logger));
-
-        public static ILog Log
-        {
-            get { return log; }
-        }
+        public static ILog Log = LogManager.GetLogger(typeof(Logger));
 
         public static void InitLogger()
         {
             var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
-            XmlConfigurator.Configure(logRepository, new FileInfo("App.config"));
+            XmlConfigurator.Configure(logRepository, new FileInfo("Log.config"));
         }
     }
 }
